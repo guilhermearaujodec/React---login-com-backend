@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect} from "react"
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, Link} from 'react-router-dom'
 
 const Login =()=>{
 
@@ -40,9 +40,9 @@ const Login =()=>{
                 navigate("/dashboard");
         } else{
             alert("usuario/senha inválidos")
-     
-   }
+        }
     }
+
     //Hook-useEffect vai buscar os dados do login no json
 
     useEffect(()=>{
@@ -102,9 +102,9 @@ const Login =()=>{
                         </li>
                         <li>
                             <span className="texto1">Não possui Conta?</span>
-                           <a href="#">
+                           <Link to="/cadUsuarios">
                             Criar
-                           </a>
+                           </Link>
                         </li>
 
                     </ul>

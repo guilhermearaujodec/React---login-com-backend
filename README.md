@@ -19,3 +19,9 @@ npm install json-server
 
 # Executando o servidor backend
 npm run backend
+
+# icones do react 
+https://react-icons.github.io/react-icons/
+
+# instalando as dependências do react-icons
+npm install react-icons
